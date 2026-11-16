@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pott Product Studio · Consultoria de Produto & Automação com IA</title>
+<meta name="description" content="Consultoria de produto e automação com IA para pequenos e médios negócios em Porto Alegre e remoto. Tiramos sua operação das planilhas e do atendimento manual."/>
+<meta property="og:title" content="Pott Product Studio"/>
+<meta property="og:description" content="Consultoria de produto e automação com IA para pequenos e médios negócios em Porto Alegre e remoto."/>
+<meta property="og:type" content="website"/>
+<meta name="theme-color" content="#0f1120"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Pott Product Studio",
+  "image": "https://studio.crislapott.com/",
+  "description": "Consultoria de produto e automação com IA para pequenos e médios negócios.",
+  "url": "https://studio.crislapott.com/",
+  "email": "crislapott@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Porto Alegre",
+    "addressRegion": "RS",
+    "addressCountry": "BR"
+  },
+  "areaServed": "Porto Alegre, RS",
+  "priceRange": "$$"
+}
+</script>
+<style>
+:root {
+  --ink: #e8eaf2;
+  --ink-2: #b0b8d4;
+  --ink-3: #6b7699;
+  --paper: #0f1120;
+  --paper-2: #161929;
+  --paper-3: #1d2235;
+  --accent: #5eead4;
+  --accent-light: rgba(94,234,212,0.1);
+  --accent-mid: #38bdf8;
+  --accent-purple: #8b5cf6;
+  --accent-cyan: #22d3ee;
+  --brand-gradient: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-mid) 55%, var(--accent-cyan) 100%);
+  --rule: rgba(255,255,255,0.08);
+  --serif: 'DM Serif Display', Georgia, serif;
+  --sans: 'DM Sans', system-ui, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+
+/* Nav */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(15,17,32,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rule);
+  padding: 0.875rem 0;
+}
+.nav-inner { max-width: 1000px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; }
+.nav-name { font-family: var(--serif); font-size: 1.05rem; color: var(--ink); text-decoration: none; letter-spacing: 0.01em; }
+.nav-links { display: flex; gap: 1.75rem; list-style: none; }
+.nav-links a { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--accent); }
+.nav-cta {
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+  text-decoration: none; color: #0b0d1a; background: var(--brand-gradient);
+  padding: 0.5rem 0.9rem; border-radius: 3px;
+}
+
+/* Hero */
+.hero {
+  position: relative; overflow: hidden;
+  padding: 5rem 0 4rem;
+  border-bottom: 1px solid var(--rule);
+  background:
+    radial-gradient(ellipse 700px 460px at 12% 10%, rgba(139,92,246,0.22), transparent 60%),
+    radial-gradient(ellipse 600px 480px at 90% 85%, rgba(34,211,238,0.16), transparent 60%);
+}
+.hero-network-bg { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.55; pointer-events: none; }
+.hero-content { position: relative; z-index: 1; max-width: 760px; }
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--ink-2); margin-bottom: 1.75rem;
+}
+.hero-eyebrow span:not(:last-child)::after { content: '·'; margin-left: 0.6rem; color: var(--accent-purple); }
+.hero-name {
+  font-family: var(--serif); font-size: clamp(2.6rem, 7vw, 4.2rem); line-height: 1.08;
+  margin-bottom: 0.9rem; letter-spacing: -0.02em;
+}
+.hero-name .grad { background: var(--brand-gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero-tagline { font-size: 1.15rem; color: var(--ink-2); font-weight: 300; margin-bottom: 1.75rem; max-width: 560px; }
+.hero-bio { font-size: 1.02rem; color: var(--ink-2); line-height: 1.8; margin-bottom: 2.25rem; max-width: 600px; }
+.hero-bio strong { font-weight: 500; color: var(--ink); }
+.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem;
+  font-family: var(--sans); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+  text-decoration: none; border-radius: 3px; transition: all 0.2s; cursor: pointer;
+}
+.btn-primary { background: var(--brand-gradient); color: #0b0d1a; border: 1px solid transparent; }
+.btn-primary:hover { filter: brightness(1.12); transform: translateY(-1px); }
+.btn-ghost { background: transparent; color: var(--ink-2); border: 1px solid var(--rule); }
+.btn-ghost:hover { border-color: var(--ink-3); color: var(--ink); }
+
+/* Section */
+.section { padding: 4.5rem 0; border-bottom: 1px solid var(--rule); }
+.section-label {
+  display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.75rem;
+}
+.section-label::before { content: ''; display: block; width: 14px; height: 1px; background: var(--brand-gradient); }
+.section-title { font-family: var(--serif); font-size: clamp(1.7rem, 4vw, 2.3rem); line-height: 1.2; letter-spacing: -0.015em; margin-bottom: 1rem; }
+.section-intro { font-size: 1rem; color: var(--ink-3); line-height: 1.7; margin-bottom: 2.75rem; max-width: 640px; }
+
+/* Services */
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.service { background: var(--paper-2); padding: 2rem 1.75rem; transition: background 0.2s; }
+.service:hover { background: var(--paper-3); }
+.service-icon { color: var(--accent-cyan); margin-bottom: 1rem; }
+.service-title { font-family: var(--serif); font-size: 1.15rem; margin-bottom: 0.6rem; line-height: 1.25; }
+.service-text { font-size: 0.88rem; color: var(--ink-3); line-height: 1.65; }
+
+/* Cases */
+.cases { display: flex; flex-direction: column; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.case { background: var(--paper-2); padding: 1.75rem 2rem; }
+.case-num { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-cyan); margin-bottom: 0.4rem; }
+.case-name { font-family: var(--serif); font-size: 1.25rem; line-height: 1.25; margin-bottom: 0.6rem; }
+.case-text { font-size: 0.92rem; color: var(--ink-2); line-height: 1.75; }
+
+/* Model */
+.model-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+.model-item { }
+.model-title { font-family: var(--serif); font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--ink); }
+.model-text { font-size: 0.9rem; color: var(--ink-3); line-height: 1.65; }
+
+/* Contact */
+.contact-section { padding: 4.5rem 0; }
+.contact-blurb { font-size: 1.02rem; color: var(--ink-2); line-height: 1.8; margin-bottom: 2rem; max-width: 560px; }
+.contact-links { display: flex; flex-direction: column; gap: 0.75rem; }
+.contact-link {
+  display: flex; align-items: center; gap: 0.75rem; padding: 0.9rem 1.1rem;
+  border: 1px solid var(--rule); border-radius: 3px; color: var(--ink-2); text-decoration: none;
+  font-size: 0.92rem; transition: all 0.2s; max-width: 420px;
+}
+.contact-link:hover { border-color: var(--accent-cyan); color: var(--ink); }
+.contact-link-icon { font-size: 1rem; }
+
+/* Footer */
+footer { padding: 2rem 0; }
+.footer-inner { max-width: 1000px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+.footer-name { font-family: var(--serif); font-size: 0.95rem; color: var(--ink-2); }
+.footer-note { font-size: 0.8rem; color: var(--ink-3); }
+
+@media (max-width: 600px) {
+  .footer-inner { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="#">Pott Product Studio</a>
+    <ul class="nav-links">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#cases">Cases</a></li>
+      <li><a href="#modelo">Como cobramos</a></li>
+    </ul>
+    <a class="nav-cta" href="https://wa.me/5553997110168" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <canvas class="hero-network-bg" id="hero-network"></canvas>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow"><span>Produto</span><span>Dados</span><span>IA</span><span>Automação</span></div>
+      <h1 class="hero-name">Pott <span class="grad">Product Studio</span></h1>
+      <p class="hero-tagline">Transformamos ideias em produtos de impacto.</p>
+      <p class="hero-bio">
+        Consultoria de produto e automação com IA para pequenos e médios negócios em <strong>Porto Alegre e remoto</strong>. Tiramos sua operação das planilhas e do atendimento manual e colocamos sistemas que realmente funcionam — do diagnóstico à entrega.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://wa.me/5553997110168" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a class="btn btn-ghost" href="#cases">Ver cases ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="section-label">O que fazemos</div>
+    <h2 class="section-title">Produto e automação sob medida</h2>
+    <p class="section-intro">Não vendemos software de prateleira. Cada projeto começa com diagnóstico do seu processo real — depois desenhamos e entregamos a solução certa pro seu negócio.</p>
+    <div class="services">
+      <div class="service">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3 class="service-title">Atendimento com IA</h3>
+        <p class="service-text">Atendentes de IA para Instagram e WhatsApp que respondem no tom da sua marca, tiram dúvida de produto e preço, e sabem a hora certa de passar a conversa pra você fechar.</p>
+      </div>
+      <div class="service">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+        </div>
+        <h3 class="service-title">Consultoria de produto</h3>
+        <p class="service-text">Diagnóstico ponta a ponta dos seus processos administrativos e comerciais, e desenho de uma solução digital que substitui controles manuais e planilhas.</p>
+      </div>
+      <div class="service">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3 class="service-title">Triagem & antifraude com IA</h3>
+        <p class="service-text">Pipelines automatizados de verificação e scoring de risco — reduzindo revisão manual sem abrir mão de precisão.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="cases">
+  <div class="container">
+    <div class="section-label">Cases</div>
+    <h2 class="section-title">Projetos recentes</h2>
+    <p class="section-intro">Exemplos anonimizados do tipo de trabalho que entregamos.</p>
+    <div class="cases">
+      <div class="case">
+        <div class="case-num">Varejo · Instagram</div>
+        <div class="case-name">Atendente de IA + mini-CRM pra loja no Instagram</div>
+        <p class="case-text">Loja que atendia 100% manualmente no Instagram, sem controle de estoque — só uma lista em texto. Entregamos um atendente de IA que responde no tom da marca, detecta quando o cliente está pronto pra fechar e passa a conversa pra dona assumir, mais um mini-CRM com estoque, leads e histórico de conversas num só lugar.</p>
+      </div>
+      <div class="case">
+        <div class="case-num">Mobilidade · Onboarding</div>
+        <div class="case-name">Sistema antifraude com IA para cadastro de motoristas</div>
+        <p class="case-text">Pipeline de triagem automatizada para onboarding, combinando OCR, deduplicação facial e cruzamento de dados. Eliminou a revisão manual em ~88% dos cadastros, com taxa de falso positivo próxima de zero nos casos restantes.</p>
+      </div>
+      <div class="case">
+        <div class="case-num">Indústria · Em andamento</div>
+        <div class="case-name">Consultoria de produto para substituir controles em planilha</div>
+        <p class="case-text">Consultoria de produto independente, liderando o fluxo de ponta a ponta — do diagnóstico de processos ao desenho e entrega de uma solução digital que substituiu controles manuais em planilhas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="modelo">
+  <div class="container">
+    <div class="section-label">Como cobramos</div>
+    <h2 class="section-title">Simples e sem surpresa</h2>
+    <div class="model-grid">
+      <div class="model-item">
+        <div class="model-title">Por hora trabalhada</div>
+        <p class="model-text">Sem pacote fechado genérico. Você paga pelo tempo que o projeto realmente exige.</p>
+      </div>
+      <div class="model-item">
+        <div class="model-title">Aprovação por fase</div>
+        <p class="model-text">O projeto é dividido em fases. Cada uma é aprovada antes de começar — dá pra acompanhar e, se precisar, parar sem perder o que já foi entregue.</p>
+      </div>
+      <div class="model-item">
+        <div class="model-title">Suporte contínuo opcional</div>
+        <p class="model-text">Depois do lançamento, suporte mensal pra manter tudo rodando: monitoramento, backups e ajustes, sem você precisar se preocupar com infraestrutura.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contato">
+  <div class="container">
+    <div class="section-label">Contato</div>
+    <h2 class="section-title">Vamos conversar</h2>
+    <p class="contact-blurb">Conta pra gente qual processo do seu negócio ainda vive no manual ou na planilha. A gente diagnostica e te diz se — e como — vale a pena automatizar.</p>
+    <div class="contact-links">
+      <a class="contact-link" href="https://wa.me/5553997110168" target="_blank" rel="noopener">
+        <span class="contact-link-icon">💬</span> WhatsApp — +55 53 99711 0168
+      </a>
+      <a class="contact-link" href="mailto:crislapott@gmail.com">
+        <span class="contact-link-icon">✉</span> crislapott@gmail.com
+      </a>
+      <a class="contact-link" href="https://crislapott.com" target="_blank" rel="noopener">
+        <span class="contact-link-icon">↗</span> crislapott.com — currículo & experiência completa
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-name">Pott Product Studio</span>
+    <span class="footer-note">Porto Alegre, Brasil</span>
+  </div>
+</footer>
+
+<script>
+(function initHeroNetwork() {
+  var canvas = document.getElementById('hero-network');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var hero = canvas.closest('.hero');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var w, h, dpr, particles;
+  var COLORS = ['139,92,246', '56,189,248', '34,211,238'];
+  var COUNT = 46;
+  var LINK_DIST = 140;
+
+  function resize() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = hero.offsetWidth;
+    h = hero.offsetHeight;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function makeParticles() {
+    particles = [];
+    for (var i = 0; i < COUNT; i++) {
+      particles.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.25,
+        vy: (Math.random() - 0.5) * 0.25,
+        r: Math.random() * 1.6 + 0.8,
+        c: COLORS[i % COLORS.length]
+      });
+    }
+  }
+
+  function step() {
+    ctx.clearRect(0, 0, w, h);
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
+      if (!reduceMotion) {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0 || p.x > w) p.vx *= -1;
+        if (p.y < 0 || p.y > h) p.vy *= -1;
+      }
+      for (var j = i + 1; j < particles.length; j++) {
+        var q = particles[j];
+        var dx = p.x - q.x, dy = p.y - q.y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < LINK_DIST) {
+          ctx.strokeStyle = 'rgba(' + p.c + ',' + (0.16 * (1 - dist / LINK_DIST)) + ')';
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(q.x, q.y);
+          ctx.stroke();
+        }
+      }
+    }
+    for (var k = 0; k < particles.length; k++) {
+      var pt = particles[k];
+      ctx.fillStyle = 'rgba(' + pt.c + ',0.65)';
+      ctx.beginPath();
+      ctx.arc(pt.x, pt.y, pt.r, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    if (!reduceMotion) requestAnimationFrame(step);
+  }
+
+  resize();
+  makeParticles();
+  step();
+  window.addEventListener('resize', function () {
+    resize();
+    makeParticles();
+    if (reduceMotion) step();
+  });
+})();
+</script>
+
+</body>
+</html>
