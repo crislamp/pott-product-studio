@@ -199,6 +199,13 @@ nav {
 }
 .contact-link:hover { border-color: var(--green); color: var(--green); }
 .contact-link .pfx { color: var(--green-dim); }
+.contact-icon {
+  width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border); color: var(--green); background: var(--bg-3);
+}
+.contact-icon svg { width: 18px; height: 18px; }
+.contact-link.wa .contact-icon { background: var(--green); color: var(--bg); border-color: var(--green); }
 .avail-term .term-body { font-size: 0.82rem; }
 .avail-item { display: flex; gap: 0.5rem; margin-bottom: 0.4rem; color: var(--text-dim); }
 .avail-item .dot { color: var(--green); }
@@ -386,9 +393,24 @@ footer { padding: 2rem 0; }
       <div>
         <p class="sec-intro" style="margin-bottom:0;">Me conta o que no seu negócio hoje ainda é feito na mão ou vive numa planilha. Te digo se — e como — dá pra resolver.</p>
         <div class="contact-links">
-          <a class="contact-link" href="https://wa.me/5553997110168" target="_blank" rel="noopener"><span class="pfx">&gt;</span> whatsapp — +55 53 99711 0168</a>
-          <a class="contact-link" href="mailto:crislapott@gmail.com"><span class="pfx">&gt;</span> crislapott@gmail.com</a>
-          <a class="contact-link" href="https://crislapott.com" target="_blank" rel="noopener"><span class="pfx">&gt;</span> crislapott.com — currículo completo</a>
+          <a class="contact-link wa" href="https://wa.me/5553997110168" target="_blank" rel="noopener">
+            <span class="contact-icon">
+              <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.63 4.62 1.724 6.553L4 29l7.613-1.999A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.75c-1.995 0-3.85-.58-5.42-1.578l-.389-.237-4.52 1.187 1.208-4.405-.254-.406A9.72 9.72 0 0 1 6.25 15c0-5.376 4.375-9.75 9.751-9.75S25.75 9.624 25.75 15 21.377 24.75 16.001 24.75zm5.361-7.297c-.293-.147-1.735-.857-2.004-.955-.269-.098-.465-.147-.661.147-.195.293-.758.955-.929 1.151-.171.196-.343.22-.636.073-.293-.147-1.236-.456-2.355-1.455-.871-.777-1.459-1.737-1.63-2.03-.171-.293-.018-.451.129-.597.133-.132.293-.343.44-.514.147-.171.196-.293.293-.489.098-.196.049-.367-.024-.514-.073-.147-.661-1.594-.906-2.183-.238-.573-.481-.496-.661-.505l-.563-.01c-.196 0-.514.073-.783.367-.269.293-1.027 1.004-1.027 2.45s1.051 2.842 1.197 3.038c.147.196 2.069 3.159 5.012 4.43.7.302 1.246.482 1.672.617.703.224 1.343.192 1.849.117.564-.084 1.735-.709 1.98-1.393.244-.684.244-1.27.171-1.393-.073-.122-.269-.196-.562-.343z"/></svg>
+            </span>
+            Falar no WhatsApp
+          </a>
+          <a class="contact-link" href="mailto:crislapott@gmail.com">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            </span>
+            crislapott@gmail.com
+          </a>
+          <a class="contact-link" href="https://crislapott.com" target="_blank" rel="noopener">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+            crislapott.com — currículo completo
+          </a>
         </div>
       </div>
       <div class="term avail-term">
