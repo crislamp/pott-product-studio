@@ -6,7 +6,7 @@
 <title>Pott Product Studio // automação com IA em 2 fins de semana</title>
 <meta name="description" content="Diagnóstico, construção e entrega de mini-sistemas de IA pra pequenos negócios — em até 2 fins de semana. Porto Alegre e remoto."/>
 <meta property="og:title" content="Pott Product Studio"/>
-<meta property="og:description" content="Automação com IA em 2 fins de semana: entendemos o problema, construímos e entregamos — sem projeto de meses."/>
+<meta property="og:description" content="Automação com IA em 2 fins de semana: entendo o problema, construo e entrego — sem projeto de meses."/>
 <meta property="og:type" content="website"/>
 <meta name="theme-color" content="#060a08"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -208,6 +208,28 @@ nav {
 }
 
 /* Footer */
+/* Floating WhatsApp button */
+.wa-float {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 1000;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--green); color: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none;
+  animation: wa-pulse 2.5s infinite;
+  transition: transform 0.15s, filter 0.15s;
+}
+.wa-float:hover { filter: brightness(1.1); transform: scale(1.06); }
+.wa-float svg { width: 28px; height: 28px; }
+@keyframes wa-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(57,255,136,0.55); }
+  70% { box-shadow: 0 0 0 14px rgba(57,255,136,0); }
+  100% { box-shadow: 0 0 0 0 rgba(57,255,136,0); }
+}
+@media (max-width: 500px) {
+  .wa-float { width: 50px; height: 50px; bottom: 1rem; right: 1rem; }
+  .wa-float svg { width: 25px; height: 25px; }
+}
+
 footer { padding: 2rem 0; }
 .footer-inner { max-width: 980px; margin: 0 auto; padding: 0 1.75rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; font-size: 0.78rem; color: var(--text-dim); }
 .footer-inner .green { color: var(--green); }
@@ -236,7 +258,7 @@ footer { padding: 2rem 0; }
       <span class="hero-tag time">⚡ pronto em 2 fins de semana</span>
     </div>
     <h1 class="hero-title">O trabalho chato sai,<br/>a <span class="hl">IA</span> entra.</h1>
-    <p class="hero-sub">Conversamos com você, entendemos o que ainda é feito na mão ou numa planilha, e montamos algo simples que resolve isso. <strong>Sem projeto de meses, sem contrato complicado</strong> — só 2 fins de semana e já tá funcionando.</p>
+    <p class="hero-sub">Converso com você, entendo o que ainda é feito na mão ou numa planilha, e monto algo simples que resolve isso. <strong>Sem projeto de meses, sem contrato complicado</strong> — só 2 fins de semana e já tá funcionando.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="https://wa.me/5553997110168" target="_blank" rel="noopener">&gt; falar no whatsapp</a>
       <a class="btn btn-ghost" href="#projetos">&gt; ver projetos</a>
@@ -255,17 +277,17 @@ footer { padding: 2rem 0; }
   <div class="container">
     <div class="sec-tag">como_funciona.md</div>
     <h2 class="sec-title">Como funciona na prática</h2>
-    <p class="sec-intro">Nada de reunião toda semana por três meses. Combinamos tudo antes de começar, e resolvemos em dois fins de semana.</p>
+    <p class="sec-intro">Nada de reunião toda semana por três meses. Combino tudo antes de começar, e resolvo em dois fins de semana.</p>
     <div class="steps">
       <div class="step">
         <div class="step-tag">[ fim de semana 01 ]</div>
-        <div class="step-title">Entendemos o problema</div>
-        <p class="step-text">Conversamos com você, vemos como as coisas funcionam hoje e já deixamos combinado exatamente o que vai ser feito — sem surpresa depois.</p>
+        <div class="step-title">Entendo o problema</div>
+        <p class="step-text">Converso com você, vejo como as coisas funcionam hoje e já deixo combinado exatamente o que vai ser feito — sem surpresa depois.</p>
       </div>
       <div class="step">
         <div class="step-tag">[ fim de semana 02 ]</div>
-        <div class="step-title">Construímos e entregamos</div>
-        <p class="step-text">Montamos tudo, testamos com informação de verdade do seu negócio e entregamos já funcionando — explicando certinho o que precisa de atenção depois.</p>
+        <div class="step-title">Construo e entrego</div>
+        <p class="step-text">Monto tudo, testo com informação de verdade do seu negócio e entrego já funcionando — explicando certinho o que precisa de atenção depois.</p>
       </div>
     </div>
   </div>
@@ -274,12 +296,12 @@ footer { padding: 2rem 0; }
 <section class="section" id="projetos">
   <div class="container">
     <div class="sec-tag">ls -la ./projetos</div>
-    <h2 class="sec-title">Projetos que já fizemos</h2>
+    <h2 class="sec-title">Projetos que já fiz</h2>
     <p class="ls-line"><span class="perm">drwxr-xr-x</span> · exemplos reais, com os nomes trocados</p>
     <div class="cases">
       <div class="case">
         <div class="case-head"><span class="case-file">atendente_ig.case</span><span class="case-tag">varejo · instagram</span></div>
-        <p class="case-text"><span class="cm">//</span> Uma loja que respondia todo mundo na mão no Instagram, sem nem saber direito o que tinha em estoque. Montamos um robozinho de IA que conversa no tom da loja, responde as dúvidas, e só chama a dona quando o cliente já tá quase fechando a compra. De quebra, deixamos tudo organizado numa telinha simples: estoque, clientes e as conversas.</p>
+        <p class="case-text"><span class="cm">//</span> Uma loja que respondia todo mundo na mão no Instagram, sem nem saber direito o que tinha em estoque. Montei um robozinho de IA que conversa no tom da loja, responde as dúvidas, e só chama a dona quando o cliente já tá quase fechando a compra. De quebra, deixei tudo organizado numa telinha simples: estoque, clientes e as conversas.</p>
       </div>
       <div class="case">
         <div class="case-head"><span class="case-file">antifraude_onboarding.case</span><span class="case-tag">mobilidade</span></div>
@@ -287,7 +309,7 @@ footer { padding: 2rem 0; }
       </div>
       <div class="case">
         <div class="case-head"><span class="case-file">hotzones.case</span><span class="case-tag">entregas · projeto pessoal</span></div>
-        <p class="case-text"><span class="cm">//</span> Pra ajudar entregadores a saber onde vai ter mais pedido, montamos um mapa que mostra, de meia em meia hora, onde a cidade costuma pedir mais comida — com previsão pros três dias seguintes. Assim o entregador decide onde esperar o próximo pedido, sem ficar rodando à toa. <a href="https://crislamp.github.io/hotzones-bogota/" target="_blank" rel="noopener" style="color:var(--green);">› ver demo ao vivo</a></p>
+        <p class="case-text"><span class="cm">//</span> Pra ajudar entregadores a saber onde vai ter mais pedido, montei um mapa que mostra, de meia em meia hora, onde a cidade costuma pedir mais comida — com previsão pros três dias seguintes. Assim o entregador decide onde esperar o próximo pedido, sem ficar rodando à toa. <a href="https://crislamp.github.io/hotzones-bogota/" target="_blank" rel="noopener" style="color:var(--green);">› ver demo ao vivo</a></p>
       </div>
     </div>
   </div>
@@ -297,7 +319,7 @@ footer { padding: 2rem 0; }
   <div class="container">
     <div class="sec-tag">escopo.cfg</div>
     <h2 class="sec-title">Pra não ter surpresa depois</h2>
-    <p class="sec-intro">Esse formato de 2 fins de semana é pra coisa pontual, rápida de resolver. Se o seu caso for bem maior que isso, já te avisamos na hora.</p>
+    <p class="sec-intro">Esse formato de 2 fins de semana é pra coisa pontual, rápida de resolver. Se o seu caso for bem maior que isso, já te aviso na hora.</p>
     <div class="scope-grid">
       <div class="scope-box yes">
         <div class="scope-head">dá pra resolver assim</div>
@@ -325,7 +347,7 @@ footer { padding: 2rem 0; }
   <div class="container">
     <div class="sec-tag">cobranca.json</div>
     <h2 class="sec-title">Quanto custa</h2>
-    <p class="sec-intro">O preço depende de quão grande é o problema que você quer resolver. Já fechamos o valor antes de começar — sem cobrar por hora, sem o preço mudar no meio do caminho.</p>
+    <p class="sec-intro">O preço depende de quão grande é o problema que você quer resolver. Já fecho o valor antes de começar — sem cobrar por hora, sem o preço mudar no meio do caminho.</p>
     <div class="price-grid">
       <div class="price-item">
         <div class="price-num">pacote 01</div>
@@ -346,11 +368,11 @@ footer { padding: 2rem 0; }
     <div class="scope-grid" style="margin-top:1.5rem;">
       <div class="scope-box yes">
         <div class="scope-head">uma conversa de graça</div>
-        <p class="price-text">Conversamos com você de graça pra entender o problema e dizer quanto custaria resolver. Sem compromisso nenhum.</p>
+        <p class="price-text">Converso com você de graça pra entender o problema e dizer quanto custaria resolver. Sem compromisso nenhum.</p>
       </div>
       <div class="scope-box yes">
         <div class="scope-head">ajuda depois, se precisar</div>
-        <p class="price-text">Depois que tudo tá funcionando, se você quiser, continuamos de olho todo mês, resolvendo o que aparecer.</p>
+        <p class="price-text">Depois que tudo tá funcionando, se você quiser, continuo de olho todo mês, resolvendo o que aparecer.</p>
       </div>
     </div>
   </div>
@@ -362,7 +384,7 @@ footer { padding: 2rem 0; }
     <h2 class="sec-title">Bora resolver isso?</h2>
     <div class="contact-grid">
       <div>
-        <p class="sec-intro" style="margin-bottom:0;">Me conta o que no seu negócio hoje ainda é feito na mão ou vive numa planilha. Te dizemos se — e como — dá pra resolver.</p>
+        <p class="sec-intro" style="margin-bottom:0;">Me conta o que no seu negócio hoje ainda é feito na mão ou vive numa planilha. Te digo se — e como — dá pra resolver.</p>
         <div class="contact-links">
           <a class="contact-link" href="https://wa.me/5553997110168" target="_blank" rel="noopener"><span class="pfx">&gt;</span> whatsapp — +55 53 99711 0168</a>
           <a class="contact-link" href="mailto:crislapott@gmail.com"><span class="pfx">&gt;</span> crislapott@gmail.com</a>
@@ -438,5 +460,10 @@ footer { padding: 2rem 0; }
 })();
 </script>
 
+<a class="wa-float" href="https://wa.me/5553997110168" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.63 4.62 1.724 6.553L4 29l7.613-1.999A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.75c-1.995 0-3.85-.58-5.42-1.578l-.389-.237-4.52 1.187 1.208-4.405-.254-.406A9.72 9.72 0 0 1 6.25 15c0-5.376 4.375-9.75 9.751-9.75S25.75 9.624 25.75 15 21.377 24.75 16.001 24.75zm5.361-7.297c-.293-.147-1.735-.857-2.004-.955-.269-.098-.465-.147-.661.147-.195.293-.758.955-.929 1.151-.171.196-.343.22-.636.073-.293-.147-1.236-.456-2.355-1.455-.871-.777-1.459-1.737-1.63-2.03-.171-.293-.018-.451.129-.597.133-.132.293-.343.44-.514.147-.171.196-.293.293-.489.098-.196.049-.367-.024-.514-.073-.147-.661-1.594-.906-2.183-.238-.573-.481-.496-.661-.505l-.563-.01c-.196 0-.514.073-.783.367-.269.293-1.027 1.004-1.027 2.45s1.051 2.842 1.197 3.038c.147.196 2.069 3.159 5.012 4.43.7.302 1.246.482 1.672.617.703.224 1.343.192 1.849.117.564-.084 1.735-.709 1.98-1.393.244-.684.244-1.27.171-1.393-.073-.122-.269-.196-.562-.343z"/>
+  </svg>
+</a>
 </body>
 </html>
