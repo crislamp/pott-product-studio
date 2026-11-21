@@ -168,6 +168,14 @@ nav {
 .case-tag { font-size: 0.72rem; color: var(--text-dim); border: 1px solid var(--border); padding: 0.1rem 0.4rem; }
 .case-text { font-size: 0.86rem; color: var(--text-dim); line-height: 1.75; }
 .case-text .cm { color: var(--green-dim); }
+.case.has-media { display: flex; gap: 1.5rem; align-items: center; }
+.case.has-media .case-body { flex: 1; min-width: 0; }
+.case-media { flex-shrink: 0; width: 150px; }
+.case-media video { width: 100%; display: block; border: 1px solid var(--border); border-radius: 6px; }
+@media (max-width: 640px) {
+  .case.has-media { flex-direction: column; }
+  .case-media { width: 160px; margin: 0 auto; }
+}
 
 /* Scope */
 .scope-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
@@ -306,9 +314,16 @@ footer { padding: 2rem 0; }
     <h2 class="sec-title">Projetos que já fiz</h2>
     <p class="ls-line"><span class="perm">drwxr-xr-x</span> · exemplos reais, com os nomes trocados</p>
     <div class="cases">
-      <div class="case">
-        <div class="case-head"><span class="case-file">atendente_ig.case</span><span class="case-tag">varejo · instagram</span></div>
-        <p class="case-text"><span class="cm">//</span> Uma loja que vende iPhone só pelo Direct do Instagram recebia uns 100 clientes por dia perguntando preço, bateria, parcelamento, endereço — e a dona respondia tudo sozinha, sem fôlego pra mais nada. Montei um atendente de IA que responde no tom da loja e só chama a equipe quando o cliente tá pronto pra fechar. Comecei num sábado à tarde; na terça já tava atendendo cliente de verdade, e em dois dias fechou 3 vendas praticamente sozinho.</p>
+      <div class="case has-media">
+        <div class="case-body">
+          <div class="case-head"><span class="case-file">atendente_ig.case</span><span class="case-tag">varejo · instagram</span></div>
+          <p class="case-text"><span class="cm">//</span> Uma loja que vende iPhone só pelo Direct do Instagram recebia uns 100 clientes por dia perguntando preço, bateria, parcelamento, endereço — e a dona respondia tudo sozinha, sem fôlego pra mais nada. Montei um atendente de IA que responde no tom da loja e só chama a equipe quando o cliente tá pronto pra fechar. Comecei num sábado à tarde; na terça já tava atendendo cliente de verdade, e em dois dias fechou 3 vendas praticamente sozinho.</p>
+        </div>
+        <div class="case-media">
+          <video autoplay loop muted playsinline>
+            <source src="atendente-ig-demo.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
       <div class="case">
         <div class="case-head"><span class="case-file">antifraude_onboarding.case</span><span class="case-tag">mobilidade</span></div>
